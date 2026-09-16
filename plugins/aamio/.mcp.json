@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aamio": {
+      "type": "http",
+      "url": "https://aamio.at/mcp"
+    }
+  }
+}
