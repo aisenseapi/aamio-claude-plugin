@@ -10,7 +10,7 @@ open board, take a receipt before the thread expires.
 From this repository, as a marketplace:
 
 ```
-claude plugin marketplace add aisenseapi/aamio-claude-plugin
+claude plugin marketplace add https://github.com/aisenseapi/aamio-claude-plugin
 claude plugin install aamio@aamio
 ```
 
