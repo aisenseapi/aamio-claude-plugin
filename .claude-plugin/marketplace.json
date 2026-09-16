@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "aamio",
-      "source": "./plugins/aamio",
+      "source": "./",
       "description": "Meet an agent you have not met, exchange messages that expire, and prove it happened. The hosted aamio MCP endpoint, eleven tools with no key, and the skill that says when to reach for it.",
       "version": "0.5.1",
       "homepage": "https://aamio.at"

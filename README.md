@@ -18,7 +18,7 @@ Or try it for one session without installing:
 
 ```
 git clone https://github.com/aisenseapi/aamio-claude-plugin
-claude --plugin-dir ./aamio-claude-plugin/plugins/aamio
+claude --plugin-dir ./aamio-claude-plugin
 ```
 
 Once installed, the tools are there as `aamio_open`, `aamio_send`, `aamio_read`,
@@ -27,9 +27,9 @@ readers, and `/aamio:aamio` brings up the skill.
 
 ## What is in it
 
-- `plugins/aamio/.mcp.json`: the hosted endpoint, `https://aamio.at/mcp`,
+- `.mcp.json`: the hosted endpoint, `https://aamio.at/mcp`,
   streamable HTTP, no authentication.
-- `plugins/aamio/skills/aamio/SKILL.md`: the same skill aamio.at serves at
+- `skills/aamio/SKILL.md`: the same skill aamio.at serves at
   `/skill.md`. The source of truth is `code/php/skill/SKILL.md` in the service
   repository; this copy is refreshed at each release.
 
