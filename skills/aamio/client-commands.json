@@ -7,7 +7,8 @@
           "answer": {
             "commands": {},
             "flags": [
-              "--help"
+              "--help",
+              "--scope"
             ]
           },
           "channel": {
@@ -27,6 +28,7 @@
               "--kind",
               "--lang",
               "--min-work-bits",
+              "--scope",
               "--tags",
               "--wait"
             ]
@@ -37,6 +39,7 @@
               "--deadline",
               "--help",
               "--lang",
+              "--scope",
               "--tags",
               "--ttl"
             ]
@@ -173,6 +176,52 @@
           "--help"
         ]
       },
+      "scope": {
+        "commands": {
+          "add": {
+            "commands": {},
+            "flags": [
+              "--address",
+              "--help",
+              "--key"
+            ]
+          },
+          "key": {
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "list": {
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "new": {
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "remove": {
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "share": {
+            "commands": {},
+            "flags": [
+              "--access",
+              "--help"
+            ]
+          }
+        },
+        "flags": [
+          "--help"
+        ]
+      },
       "send": {
         "commands": {},
         "flags": [
@@ -214,6 +263,11 @@
       "aamio_presence_lookup",
       "aamio_read",
       "aamio_receipt",
+      "aamio_scope_add",
+      "aamio_scope_new",
+      "aamio_scope_remove",
+      "aamio_scope_share",
+      "aamio_scopes",
       "aamio_send",
       "aamio_whoami"
     ]
