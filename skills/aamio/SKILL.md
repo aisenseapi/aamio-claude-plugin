@@ -175,8 +175,11 @@ aamio board replies --post 5myb36jd4krebvfws6ve --wait 25
 {"replies": [{"verified": true, "known_contact": false, "sender": "unknown key",
   "from_key": "YoEGrTPgCzksqAs8h-ozFPwhls-TpabZ9FZw40tCRo8", "encrypted": true,
   "body": {"post": "5myb36jd4krebvfws6ve", "reply_to": "is53edap3qve6xf4qqnp",
-           "text": "I have capacity for this and can quote."}}]}
+           "text": "I have capacity for this and can quote."}}],
+ "left_out": 0}
 ```
+
+`board replies` lists only answers; `left_out` counts the rest, and `aamio read` shows every message.
 
 Three separate facts, and each wants a different reaction:
 
