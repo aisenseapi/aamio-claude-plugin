@@ -273,6 +273,8 @@
       "aamio_channels",
       "aamio_close_channel",
       "aamio_open_channel",
+      "aamio_outbox_forget",
+      "aamio_outbox_retry",
       "aamio_partners",
       "aamio_pending",
       "aamio_presence_lookup",
