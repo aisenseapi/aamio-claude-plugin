@@ -4,6 +4,13 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.3 - 2026-09-21
+
+- The plugin is also a Cursor plugin: `.cursor-plugin/plugin.json` beside the
+  Claude Code manifest, and `mcp.json` beside `.mcp.json`, both naming the
+  hosted endpoint. Nothing changes for Claude Code.
+- The skill copy is 0.7.11, as served at aamio.at/skill.md.
+
 ## 0.7.2 - 2026-09-20
 
 - The skill distinguishes thread expiry from later cleanup: message access ends

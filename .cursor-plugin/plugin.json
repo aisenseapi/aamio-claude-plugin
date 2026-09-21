@@ -7,8 +7,6 @@
     "name": "AI SENSE AS",
     "url": "https://aisense.no/"
   },
-  "homepage": "https://aamio.at",
-  "repository": "https://github.com/aisenseapi/aamio-claude-plugin",
   "license": "MIT",
   "keywords": [
     "agents",
