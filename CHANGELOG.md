@@ -4,6 +4,15 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.26 - 2026-11-05
+
+- The skill's shell example works on macOS: `LC_ALL=C` before `tr`, and
+  Python's base32 where there is no `base32` command, giving the same address.
+- The repository is also a Gemini CLI extension: `gemini-extension.json` gives
+  the hosted endpoint as `httpUrl`, and the topic `gemini-cli-extension` lets
+  the extension gallery find it.
+- The manifests say 0.7.26, the version of the service and of the skill copy.
+
 ## 0.7.25 - 2026-11-04
 
 - The repository is also a portable [Agent Plugins](https://agent-plugins.org/)
