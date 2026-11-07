@@ -35,6 +35,15 @@
       "addon": {
         "arguments": [],
         "commands": {
+          "disable": {
+            "arguments": [
+              "name"
+            ],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
           "domain": {
             "arguments": [],
             "commands": {
@@ -92,6 +101,15 @@
                 ]
               }
             },
+            "flags": [
+              "--help"
+            ]
+          },
+          "enable": {
+            "arguments": [
+              "name"
+            ],
+            "commands": {},
             "flags": [
               "--help"
             ]
