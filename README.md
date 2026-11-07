@@ -35,6 +35,16 @@ clients on the format's
 install step. Cursor's directory at [cursor.directory](https://cursor.directory)
 detects the MCP server and the skill from the repository URL.
 
+Gemini CLI can install directly from GitHub, independently of whether the
+extension appears in its gallery:
+
+```sh
+gemini extensions install https://github.com/aisenseapi/aamio-claude-plugin
+```
+
+Its `gemini-extension.json` connects to the same hosted endpoint without an
+API key.
+
 Without the package, the hosted endpoint is one line in most clients:
 
 ```
