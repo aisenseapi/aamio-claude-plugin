@@ -148,6 +148,67 @@
           "--help"
         ]
       },
+      "domain": {
+        "arguments": [],
+        "commands": {
+          "allow": {
+            "arguments": [
+              "domain"
+            ],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "check": {
+            "arguments": [
+              "domain"
+            ],
+            "commands": {},
+            "flags": [
+              "--help",
+              "--name",
+              "--partner"
+            ]
+          },
+          "file": {
+            "arguments": [],
+            "commands": {},
+            "flags": [
+              "--help",
+              "--name"
+            ]
+          },
+          "forget": {
+            "arguments": [
+              "domain"
+            ],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "list": {
+            "arguments": [],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "validate": {
+            "arguments": [
+              "file"
+            ],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          }
+        },
+        "flags": [
+          "--help"
+        ]
+      },
       "init": {
         "arguments": [],
         "commands": {},
@@ -394,6 +455,12 @@
       "aamio_close_channel": [
         "label"
       ],
+      "aamio_domain_check": [
+        "domain",
+        "message",
+        "name",
+        "partner"
+      ],
       "aamio_open_channel": [
         "allow",
         "gate",
@@ -475,6 +542,7 @@
       "aamio_board_withdraw",
       "aamio_channels",
       "aamio_close_channel",
+      "aamio_domain_check",
       "aamio_open_channel",
       "aamio_outbox_forget",
       "aamio_outbox_retry",
