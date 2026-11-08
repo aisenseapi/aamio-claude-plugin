@@ -39,6 +39,7 @@
         "mcp_arguments": {
           "aamio_addon_sound_broadcast": [
             "address",
+            "engine",
             "mode",
             "name",
             "out",
@@ -46,10 +47,12 @@
             "valid_for"
           ],
           "aamio_addon_sound_decode": [
+            "engine",
             "file",
             "mode"
           ],
           "aamio_addon_sound_listen": [
+            "engine",
             "mode",
             "seconds"
           ]
@@ -60,7 +63,7 @@
           "aamio_addon_sound_decode"
         ],
         "module": "aamio_sound",
-        "version": "0.1.1"
+        "version": "0.2.0"
       }
     },
     "arguments": [],
@@ -163,6 +166,7 @@
                 ],
                 "commands": {},
                 "flags": [
+                  "--engine",
                   "--help",
                   "--mode",
                   "--name",
@@ -188,6 +192,7 @@
                 ],
                 "commands": {},
                 "flags": [
+                  "--engine",
                   "--help",
                   "--mode"
                 ]
@@ -196,6 +201,7 @@
                 "arguments": [],
                 "commands": {},
                 "flags": [
+                  "--engine",
                   "--help",
                   "--mode",
                   "--seconds"
