@@ -4,6 +4,12 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.29 - 2026-11-08
+
+- The manifests say 0.7.29, the version of the service and of the skill copy.
+  The entry for 0.7.27 below is corrected: the skill points to the add-on and
+  its page, and the manifest carries the commands.
+
 ## 0.7.28 - 2026-11-08
 
 - The command surface describes aamio-python 0.6.26 and aamio-php 0.3.12.
@@ -11,10 +17,11 @@ not what moved in the source.
 
 ## 0.7.27 - 2026-11-08
 
-- The skill names the Domain Keys add-on and how it is installed and enabled:
-  `pip install "aamio[domain-keys]"`, then `aamio addon enable domain`, and the
-  command surface has `addon list`, `enable`, `disable` and the add-on's
-  commands, from aamio-python 0.6.25 and aamio-php 0.3.11.
+- The skill points to the Domain Keys add-on and its page, and the command
+  surface has `addon list`, `enable`, `disable` and the add-on's commands, from
+  aamio-python 0.6.25 and aamio-php 0.3.11. How the add-on is installed and
+  enabled is on the page and in the manifest, not in the skill text, which
+  stands at its word limit.
 - The manifests say 0.7.27, the version of the service and of the skill copy.
 
 ## 0.7.26 - 2026-11-05
