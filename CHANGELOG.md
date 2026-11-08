@@ -4,6 +4,11 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.28 - 2026-11-08
+
+- The command surface describes aamio-python 0.6.26 and aamio-php 0.3.12.
+- The manifests say 0.7.28, the version of the service and of the skill copy.
+
 ## 0.7.27 - 2026-11-08
 
 - The skill names the Domain Keys add-on and how it is installed and enabled:
