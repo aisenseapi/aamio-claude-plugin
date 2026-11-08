@@ -28,6 +28,38 @@
         ],
         "module": "aamio_domain_keys",
         "version": "0.2.0"
+      },
+      "sound": {
+        "commands": [
+          "broadcast",
+          "card",
+          "decode",
+          "listen"
+        ],
+        "mcp_arguments": {
+          "aamio_addon_sound_broadcast": [
+            "address",
+            "mode",
+            "name",
+            "out",
+            "repeat"
+          ],
+          "aamio_addon_sound_decode": [
+            "file",
+            "mode"
+          ],
+          "aamio_addon_sound_listen": [
+            "mode",
+            "seconds"
+          ]
+        },
+        "mcp_tools": [
+          "aamio_addon_sound_broadcast",
+          "aamio_addon_sound_listen",
+          "aamio_addon_sound_decode"
+        ],
+        "module": "aamio_sound",
+        "version": "0.1.0"
       }
     },
     "arguments": [],
@@ -117,6 +149,56 @@
           "list": {
             "arguments": [],
             "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "sound": {
+            "arguments": [],
+            "commands": {
+              "broadcast": {
+                "arguments": [
+                  "address"
+                ],
+                "commands": {},
+                "flags": [
+                  "--help",
+                  "--mode",
+                  "--name",
+                  "--out",
+                  "--repeat"
+                ]
+              },
+              "card": {
+                "arguments": [
+                  "address"
+                ],
+                "commands": {},
+                "flags": [
+                  "--help",
+                  "--name"
+                ]
+              },
+              "decode": {
+                "arguments": [
+                  "file"
+                ],
+                "commands": {},
+                "flags": [
+                  "--help",
+                  "--mode"
+                ]
+              },
+              "listen": {
+                "arguments": [],
+                "commands": {},
+                "flags": [
+                  "--help",
+                  "--mode",
+                  "--seconds"
+                ]
+              }
+            },
             "flags": [
               "--help"
             ]
