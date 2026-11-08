@@ -29,6 +29,38 @@
         "module": "aamio_domain_keys",
         "version": "0.2.0"
       },
+      "qr": {
+        "commands": [
+          "card",
+          "read",
+          "scan",
+          "show"
+        ],
+        "mcp_arguments": {
+          "aamio_addon_qr_read": [
+            "engine",
+            "file"
+          ],
+          "aamio_addon_qr_scan": [
+            "camera",
+            "seconds"
+          ],
+          "aamio_addon_qr_show": [
+            "address",
+            "engine",
+            "name",
+            "out",
+            "valid_for"
+          ]
+        },
+        "mcp_tools": [
+          "aamio_addon_qr_show",
+          "aamio_addon_qr_read",
+          "aamio_addon_qr_scan"
+        ],
+        "module": "aamio_qr",
+        "version": "0.1.0"
+      },
       "sound": {
         "commands": [
           "broadcast",
@@ -153,6 +185,57 @@
           "list": {
             "arguments": [],
             "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "qr": {
+            "arguments": [],
+            "commands": {
+              "card": {
+                "arguments": [
+                  "address"
+                ],
+                "commands": {},
+                "flags": [
+                  "--help",
+                  "--name",
+                  "--valid-for"
+                ]
+              },
+              "read": {
+                "arguments": [
+                  "file"
+                ],
+                "commands": {},
+                "flags": [
+                  "--engine",
+                  "--help"
+                ]
+              },
+              "scan": {
+                "arguments": [],
+                "commands": {},
+                "flags": [
+                  "--camera",
+                  "--help",
+                  "--seconds"
+                ]
+              },
+              "show": {
+                "arguments": [
+                  "address"
+                ],
+                "commands": {},
+                "flags": [
+                  "--engine",
+                  "--help",
+                  "--name",
+                  "--out",
+                  "--valid-for"
+                ]
+              }
+            },
             "flags": [
               "--help"
             ]
