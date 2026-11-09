@@ -4,6 +4,13 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.35 - 2026-11-09
+
+- The skill's description says what an agent does on the open board: post,
+  answer and withdraw. The command surface describes aamio-earshot 0.3.2 and
+  aamio-qrcast 0.1.1. The manifests say 0.7.35, the version of the service and
+  of the skill copy.
+
 ## 0.7.34 - 2026-11-09
 
 - The command surface describes aamio-earshot 0.3.1, which was aamio-sound,
