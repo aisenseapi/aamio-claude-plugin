@@ -29,39 +29,7 @@
         "module": "aamio_domain_keys",
         "version": "0.2.0"
       },
-      "qr": {
-        "commands": [
-          "card",
-          "read",
-          "scan",
-          "show"
-        ],
-        "mcp_arguments": {
-          "aamio_addon_qr_read": [
-            "engine",
-            "file"
-          ],
-          "aamio_addon_qr_scan": [
-            "camera",
-            "seconds"
-          ],
-          "aamio_addon_qr_show": [
-            "address",
-            "engine",
-            "name",
-            "out",
-            "valid_for"
-          ]
-        },
-        "mcp_tools": [
-          "aamio_addon_qr_show",
-          "aamio_addon_qr_read",
-          "aamio_addon_qr_scan"
-        ],
-        "module": "aamio_qr",
-        "version": "0.1.0"
-      },
-      "sound": {
+      "earshot": {
         "commands": [
           "broadcast",
           "card",
@@ -69,7 +37,7 @@
           "listen"
         ],
         "mcp_arguments": {
-          "aamio_addon_sound_broadcast": [
+          "aamio_addon_earshot_broadcast": [
             "address",
             "engine",
             "mode",
@@ -78,24 +46,56 @@
             "repeat",
             "valid_for"
           ],
-          "aamio_addon_sound_decode": [
+          "aamio_addon_earshot_decode": [
             "engine",
             "file",
             "mode"
           ],
-          "aamio_addon_sound_listen": [
+          "aamio_addon_earshot_listen": [
             "engine",
             "mode",
             "seconds"
           ]
         },
         "mcp_tools": [
-          "aamio_addon_sound_broadcast",
-          "aamio_addon_sound_listen",
-          "aamio_addon_sound_decode"
+          "aamio_addon_earshot_broadcast",
+          "aamio_addon_earshot_listen",
+          "aamio_addon_earshot_decode"
         ],
-        "module": "aamio_sound",
-        "version": "0.2.0"
+        "module": "aamio_earshot",
+        "version": "0.3.0"
+      },
+      "qrcast": {
+        "commands": [
+          "card",
+          "read",
+          "scan",
+          "show"
+        ],
+        "mcp_arguments": {
+          "aamio_addon_qrcast_read": [
+            "engine",
+            "file"
+          ],
+          "aamio_addon_qrcast_scan": [
+            "camera",
+            "seconds"
+          ],
+          "aamio_addon_qrcast_show": [
+            "address",
+            "engine",
+            "name",
+            "out",
+            "valid_for"
+          ]
+        },
+        "mcp_tools": [
+          "aamio_addon_qrcast_show",
+          "aamio_addon_qrcast_read",
+          "aamio_addon_qrcast_scan"
+        ],
+        "module": "aamio_qrcast",
+        "version": "0.1.0"
       }
     },
     "arguments": [],
@@ -173,74 +173,7 @@
               "--help"
             ]
           },
-          "enable": {
-            "arguments": [
-              "name"
-            ],
-            "commands": {},
-            "flags": [
-              "--help"
-            ]
-          },
-          "list": {
-            "arguments": [],
-            "commands": {},
-            "flags": [
-              "--help"
-            ]
-          },
-          "qr": {
-            "arguments": [],
-            "commands": {
-              "card": {
-                "arguments": [
-                  "address"
-                ],
-                "commands": {},
-                "flags": [
-                  "--help",
-                  "--name",
-                  "--valid-for"
-                ]
-              },
-              "read": {
-                "arguments": [
-                  "file"
-                ],
-                "commands": {},
-                "flags": [
-                  "--engine",
-                  "--help"
-                ]
-              },
-              "scan": {
-                "arguments": [],
-                "commands": {},
-                "flags": [
-                  "--camera",
-                  "--help",
-                  "--seconds"
-                ]
-              },
-              "show": {
-                "arguments": [
-                  "address"
-                ],
-                "commands": {},
-                "flags": [
-                  "--engine",
-                  "--help",
-                  "--name",
-                  "--out",
-                  "--valid-for"
-                ]
-              }
-            },
-            "flags": [
-              "--help"
-            ]
-          },
-          "sound": {
+          "earshot": {
             "arguments": [],
             "commands": {
               "broadcast": {
@@ -288,6 +221,73 @@
                   "--help",
                   "--mode",
                   "--seconds"
+                ]
+              }
+            },
+            "flags": [
+              "--help"
+            ]
+          },
+          "enable": {
+            "arguments": [
+              "name"
+            ],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "list": {
+            "arguments": [],
+            "commands": {},
+            "flags": [
+              "--help"
+            ]
+          },
+          "qrcast": {
+            "arguments": [],
+            "commands": {
+              "card": {
+                "arguments": [
+                  "address"
+                ],
+                "commands": {},
+                "flags": [
+                  "--help",
+                  "--name",
+                  "--valid-for"
+                ]
+              },
+              "read": {
+                "arguments": [
+                  "file"
+                ],
+                "commands": {},
+                "flags": [
+                  "--engine",
+                  "--help"
+                ]
+              },
+              "scan": {
+                "arguments": [],
+                "commands": {},
+                "flags": [
+                  "--camera",
+                  "--help",
+                  "--seconds"
+                ]
+              },
+              "show": {
+                "arguments": [
+                  "address"
+                ],
+                "commands": {},
+                "flags": [
+                  "--engine",
+                  "--help",
+                  "--name",
+                  "--out",
+                  "--valid-for"
                 ]
               }
             },
