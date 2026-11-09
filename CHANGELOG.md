@@ -6,7 +6,7 @@ not what moved in the source.
 
 ## 0.7.34 - 2026-11-09
 
-- The command surface describes aamio-earshot 0.3.0, which was aamio-sound,
+- The command surface describes aamio-earshot 0.3.1, which was aamio-sound,
   and aamio-qrcast 0.1.0. The manifests say 0.7.34, the version of the service
   and of the skill copy.
 
