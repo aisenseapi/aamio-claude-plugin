@@ -4,6 +4,11 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.38 - 2026-11-10
+
+- The manifests say 0.7.38, the version of the service and of the skill copy. The
+  command surface is as it was.
+
 ## 0.7.37 - 2026-11-10
 
 - The command surface has the part the Node runtime of aamio-js 0.6.0 has: its
