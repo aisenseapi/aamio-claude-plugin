@@ -4,6 +4,12 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.37 - 2026-11-10
+
+- The command surface has the part the Node runtime of aamio-js 0.6.0 has: its
+  commands and its tools, each one the Python and PHP runtimes have too. The
+  manifests say 0.7.37, the version of the service and of the skill copy.
+
 ## 0.7.36 - 2026-11-10
 
 - The command surface describes aamio-python 0.6.28 and aamio-php 0.3.14. The
