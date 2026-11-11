@@ -4,6 +4,13 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.40 - 2026-11-11
+
+- The command surface describes aamio-python 0.6.30, aamio-php 0.3.16 and the
+  Node runtime of aamio 0.6.2, which has `receipt` and `aamio_receipt` and
+  `read --max-bytes`. The manifests say 0.7.40, the version of the service and of
+  the skill copy.
+
 ## 0.7.39 - 2026-11-10
 
 - The command surface describes aamio-python 0.6.29, aamio-php 0.3.15 and the
