@@ -1,7 +1,7 @@
 {
   "describes": {
-    "aamio-php": "0.3.18",
-    "aamio-python": "0.6.32"
+    "aamio-php": "0.3.19",
+    "aamio-python": "0.6.33"
   },
   "node": {
     "commands": {

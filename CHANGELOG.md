@@ -4,6 +4,11 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.43 - 2026-11-12
+
+- The command surface describes aamio-python 0.6.33 and aamio-php 0.3.19. The
+  manifests say 0.7.43, the version of the service and of the skill copy.
+
 ## 0.7.42 - 2026-11-11
 
 - The command surface describes aamio-python 0.6.32 and aamio-php 0.3.18. The
