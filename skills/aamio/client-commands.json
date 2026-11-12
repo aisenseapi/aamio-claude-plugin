@@ -239,7 +239,7 @@
           "aamio_addon_earshot_decode"
         ],
         "module": "aamio_earshot",
-        "version": "0.3.2"
+        "version": "0.3.3"
       },
       "qrcast": {
         "commands": [
@@ -271,7 +271,7 @@
           "aamio_addon_qrcast_scan"
         ],
         "module": "aamio_qrcast",
-        "version": "0.1.1"
+        "version": "0.1.2"
       }
     },
     "arguments": [],
