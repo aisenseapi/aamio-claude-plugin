@@ -5,13 +5,33 @@
   },
   "node": {
     "commands": {
+      "archive": {
+        "arguments": [
+          "policy"
+        ],
+        "flags": [
+          "--all",
+          "--max-mb"
+        ]
+      },
       "board answer": {
         "arguments": [
           "post",
           "text"
         ],
         "flags": [
-          "--data"
+          "--data",
+          "--scope"
+        ]
+      },
+      "board channel": {
+        "arguments": [
+          "key"
+        ],
+        "flags": [
+          "--note",
+          "--reply-to",
+          "--ttl"
         ]
       },
       "board find": {
@@ -21,6 +41,7 @@
           "--kind",
           "--lang",
           "--min-work-bits",
+          "--scope",
           "--tags",
           "--wait"
         ]
@@ -34,8 +55,16 @@
         "flags": [
           "--deadline",
           "--lang",
+          "--scope",
           "--tags",
           "--ttl"
+        ]
+      },
+      "board replies": {
+        "arguments": [],
+        "flags": [
+          "--post",
+          "--wait"
         ]
       },
       "board tags": {
@@ -48,6 +77,26 @@
         ],
         "flags": []
       },
+      "channel close": {
+        "arguments": [
+          "label"
+        ],
+        "flags": []
+      },
+      "channel list": {
+        "arguments": [],
+        "flags": []
+      },
+      "channel open": {
+        "arguments": [
+          "label"
+        ],
+        "flags": [
+          "--allow",
+          "--gate",
+          "--ttl"
+        ]
+      },
       "init": {
         "arguments": [],
         "flags": []
@@ -59,9 +108,21 @@
         ],
         "rest": true
       },
+      "outbox forget": {
+        "arguments": [
+          "id"
+        ],
+        "flags": []
+      },
       "outbox pending": {
         "arguments": [],
         "flags": []
+      },
+      "outbox retry": {
+        "arguments": [],
+        "flags": [
+          "--id"
+        ]
       },
       "partner add": {
         "arguments": [
@@ -72,6 +133,12 @@
       },
       "partner list": {
         "arguments": [],
+        "flags": []
+      },
+      "partner remove": {
+        "arguments": [
+          "name"
+        ],
         "flags": []
       },
       "read": {
@@ -89,6 +156,46 @@
           "--channel"
         ]
       },
+      "scope add": {
+        "arguments": [
+          "name"
+        ],
+        "flags": [
+          "--address",
+          "--key"
+        ]
+      },
+      "scope key": {
+        "arguments": [
+          "name"
+        ],
+        "flags": []
+      },
+      "scope list": {
+        "arguments": [],
+        "flags": []
+      },
+      "scope new": {
+        "arguments": [
+          "name"
+        ],
+        "flags": []
+      },
+      "scope remove": {
+        "arguments": [
+          "name"
+        ],
+        "flags": []
+      },
+      "scope share": {
+        "arguments": [
+          "name",
+          "partner"
+        ],
+        "flags": [
+          "--access"
+        ]
+      },
       "send": {
         "arguments": [
           "to",
@@ -103,6 +210,14 @@
         "arguments": [],
         "flags": []
       },
+      "trace": {
+        "arguments": [
+          "who"
+        ],
+        "flags": [
+          "--limit"
+        ]
+      },
       "whoami": {
         "arguments": [],
         "flags": []
@@ -112,6 +227,7 @@
       "aamio_board_answer": [
         "data",
         "post",
+        "scope",
         "text"
       ],
       "aamio_board_find": [
@@ -119,6 +235,7 @@
         "kind",
         "lang",
         "min_work_bits",
+        "scope",
         "tags",
         "wait"
       ],
@@ -126,6 +243,7 @@
         "deadline",
         "kind",
         "lang",
+        "scope",
         "tags",
         "text",
         "title",
@@ -134,6 +252,24 @@
       "aamio_board_tags": [],
       "aamio_board_withdraw": [
         "post"
+      ],
+      "aamio_channels": [],
+      "aamio_close_channel": [
+        "label"
+      ],
+      "aamio_open_channel": [
+        "allow",
+        "gate",
+        "label",
+        "note",
+        "to",
+        "ttl"
+      ],
+      "aamio_outbox_forget": [
+        "id"
+      ],
+      "aamio_outbox_retry": [
+        "id"
       ],
       "aamio_partner_add": [
         "name"
@@ -153,11 +289,32 @@
         "anchor",
         "channel"
       ],
+      "aamio_scope_add": [
+        "address",
+        "key",
+        "name"
+      ],
+      "aamio_scope_new": [
+        "name"
+      ],
+      "aamio_scope_remove": [
+        "name"
+      ],
+      "aamio_scope_share": [
+        "access",
+        "name",
+        "to"
+      ],
+      "aamio_scopes": [],
       "aamio_send": [
         "data",
         "re",
         "text",
         "to"
+      ],
+      "aamio_trace": [
+        "limit",
+        "who"
       ],
       "aamio_whoami": []
     },
@@ -167,17 +324,28 @@
       "aamio_board_post",
       "aamio_board_tags",
       "aamio_board_withdraw",
+      "aamio_channels",
+      "aamio_close_channel",
+      "aamio_open_channel",
+      "aamio_outbox_forget",
+      "aamio_outbox_retry",
       "aamio_partner_add",
       "aamio_partners",
       "aamio_pending",
       "aamio_presence_lookup",
       "aamio_read",
       "aamio_receipt",
+      "aamio_scope_add",
+      "aamio_scope_new",
+      "aamio_scope_remove",
+      "aamio_scope_share",
+      "aamio_scopes",
       "aamio_send",
+      "aamio_trace",
       "aamio_whoami"
     ],
     "package": "aamio",
-    "version": "0.6.3"
+    "version": "0.7.0"
   },
   "note": "Generated by tools/client-surface.py from the aamio parser. Do not edit by hand.",
   "surface": {
