@@ -97,9 +97,16 @@
           "--ttl"
         ]
       },
-      "init": {
+      "doctor": {
         "arguments": [],
         "flags": []
+      },
+      "init": {
+        "arguments": [],
+        "flags": [
+          "--archive",
+          "--tags"
+        ]
       },
       "lookup": {
         "arguments": [],
