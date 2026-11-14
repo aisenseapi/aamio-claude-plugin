@@ -4,6 +4,12 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.46 - 2026-11-14
+
+- The command surface describes aamio-python 0.6.36, aamio-php 0.3.22 and the
+  Node runtime of aamio 0.7.3, with the add-ons Earshot 0.3.4 and QRCast 0.1.3.
+  The manifests say 0.7.46, the version of the service and of the skill copy.
+
 ## 0.7.45 - 2026-11-13
 
 - The command surface describes aamio-python 0.6.35, aamio-php 0.3.21 and the
