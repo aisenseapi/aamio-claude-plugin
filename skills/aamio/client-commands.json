@@ -432,7 +432,8 @@
             "name",
             "out",
             "repeat",
-            "valid_for"
+            "valid_for",
+            "via"
           ],
           "aamio_addon_earshot_decode": [
             "engine",
@@ -451,7 +452,7 @@
           "aamio_addon_earshot_decode"
         ],
         "module": "aamio_earshot",
-        "version": "0.4.0"
+        "version": "0.5.0"
       },
       "earshot-link": {
         "commands": [],
@@ -586,11 +587,13 @@
                 "flags": [
                   "--engine",
                   "--help",
+                  "--key",
                   "--mode",
                   "--name",
                   "--out",
                   "--repeat",
-                  "--valid-for"
+                  "--valid-for",
+                  "--via"
                 ]
               },
               "card": {
@@ -600,8 +603,10 @@
                 "commands": {},
                 "flags": [
                   "--help",
+                  "--key",
                   "--name",
-                  "--valid-for"
+                  "--valid-for",
+                  "--via"
                 ]
               },
               "decode": {

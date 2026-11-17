@@ -4,6 +4,12 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.48 - 2026-11-17
+
+- The command surface names aamio-earshot 0.5.0, with `--via` and `--key` on
+  its card and broadcast commands and `via` on its broadcast tool. The
+  manifests say 0.7.48, the version of the service and of the skill copy.
+
 ## 0.7.47 - 2026-11-17
 
 - The command surface describes aamio-python 0.7.0, aamio-php 0.4.0 and the
