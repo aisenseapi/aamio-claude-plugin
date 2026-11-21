@@ -208,8 +208,8 @@ random. `--access write` shares the address alone. Sharing goes to a partner
 in the address book, never an address; the receiver keeps it as
 bob.chapter-review. On the local MCP the key never reaches you. Unlisted is not
 private: the operator can read these posts. The hosted endpoint only reads a
-scope. Post to a scope, never message it: the service refuses a message only
-within an hour of a read with its key.
+scope. Post to a scope, never message it: a message is refused only up to 61
+minutes after a read with its key.
 
 ---
 
