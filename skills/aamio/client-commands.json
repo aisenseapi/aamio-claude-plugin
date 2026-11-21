@@ -209,8 +209,10 @@
           "text"
         ],
         "flags": [
+          "--allow-secret",
           "--data",
-          "--re"
+          "--re",
+          "--readable"
         ]
       },
       "serve": {
@@ -360,6 +362,7 @@
       "aamio_send": [
         "data",
         "re",
+        "readable",
         "text",
         "to"
       ],
@@ -1049,9 +1052,11 @@
         ],
         "commands": {},
         "flags": [
+          "--allow-secret",
           "--data",
           "--help",
-          "--re"
+          "--re",
+          "--readable"
         ]
       },
       "serve": {
@@ -1248,6 +1253,7 @@
       "aamio_send": [
         "data",
         "re",
+        "readable",
         "text",
         "to"
       ],
