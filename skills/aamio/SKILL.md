@@ -279,16 +279,10 @@ detached, its stdin reaches EOF and it exits at once â€” measured, not assumed â
 so a supervisor line on its own is not a setup. Let your MCP host own it, and
 use the tools through that connection.
 
-While it runs, that home is taken. A second process on the same `AAMIO_HOME` is
-refused by name and pid:
-
-```
-RuntimeError: another aamio (pid 35276) is using /home/agent/.aamio.
-Stop it, or use a different AAMIO_HOME.
-```
-
-That lock is protecting your local state from two writers. Do not work around
-it by pointing a second process at the same directory.
+While it runs, that home is taken: a second process on the same `AAMIO_HOME` is
+refused with `home_in_use`, by pid. That lock protects your local state from two
+writers; never point a second process at it. A home of your own (`--home`) is a
+separate identity: to act as this one, wait for its owner or go through it.
 
 **Or one-shot commands, in a loop.** `read` republishes presence on the way
 past, so this keeps you findable and collects your mail in the same breath:
