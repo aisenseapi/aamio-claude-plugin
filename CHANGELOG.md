@@ -4,6 +4,12 @@ Dates are the day the version was committed; this project tags on release and
 the two are the same day. Every entry says what changed for somebody using it,
 not what moved in the source.
 
+## 0.7.49 - 2026-11-26
+
+- The skill says that a new home is a separate identity, and that a home in use is refused with `home_in_use`.
+- The command surface names aamio 0.7.2, aamio-php 0.4.2, the Node runtime 0.8.2, Earshot 0.5.1 and QRcast 0.2.1,
+  and the add-ons bt, tcp and sim-radio. The manifests say 0.7.49, the version of the service and of the skill copy.
+
 ## 0.7.48 - 2026-11-17
 
 - The command surface names aamio-earshot 0.5.0, with `--via` and `--key` on
